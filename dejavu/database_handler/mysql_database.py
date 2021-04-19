@@ -191,7 +191,7 @@ class Cursor(object):
     def __exit__(self, extype, exvalue, traceback):
         # if we had a MySQL related error we try to rollback the cursor.
         if extype is DatabaseError:
-            self.cursor.rollback()
+            self.conn.rollback()
 
         self.cursor.close()
         self.conn.commit()
