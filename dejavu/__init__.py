@@ -204,7 +204,7 @@ class Dejavu:
 
             song = {
                 SONG_ID: song_id,
-                SONG_NAME: song_name.encode("utf8"),
+                SONG_NAME: song_name,
                 INPUT_HASHES: queried_hashes,
                 FINGERPRINTED_HASHES: song_hashes,
                 HASHES_MATCHED: hashes_matched,
